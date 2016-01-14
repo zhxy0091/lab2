@@ -5,6 +5,15 @@
 	<title>HCI Project Portfolio</title>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/grayscale.css" rel="stylesheet">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	<!-- this is a comment in HTML -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -15,68 +24,90 @@
     <![endif]-->        
 </head>
 
-<body>
-	<div>
-		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
-		<!-- p means paragraph -->
-		<div>
-			<h1>Michael Bernstein</h1>
-			<p>human-computer interaction &middot; social computing &middot; crowdsourcing</p>
-		</div>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i>  <span class="light">Project</span> Portfolio
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#page-top">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#project1">Project</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Xinyuan Zhang</h1>
+                        <p class="intro-text">Software Developer - Web Designer</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
 
-		<h4>Projects</h4>
-		<!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
-		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
-		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
-		<div id="project1">
-			<a href="project.html">
-				<img src="images/lorempixel.people.1.jpeg" alt="Lorem Pixel image">
-				<p>Waiting in Line</p>
-			</a>
-		</div>
-		<div id="project2">
-			<a href="project.html">
-				<img src="images/lorempixel.city.1.jpeg" alt="Lorem Pixel image">
-				<p>Needfinding</p>
-			</a>
-		</div>
-		<div id="project3">
-			<a href="project.html">
-				<img src="images/lorempixel.technics.1.jpeg" alt="Lorem Pixel image">
-				<p>Prototyping</p>
-			</a>
-		</div>
-		<div id="project4">
-			<a href="project.html">
-				<img src="images/lorempixel.abstract.1.jpeg" alt="Lorem Pixel image">
-				<p>Heuristic Evaluation</p>
-			</a>
-		</div>
-		<div id="project5">
-			<a href="project.html">
-				<img src="images/lorempixel.abstract.8.jpeg" alt="Lorem Pixel image">
-				<p>Visualization</p>
-			</a>
-		</div>
-		<div id="project6">
-			<a href="project.html">
-				<img src="images/lorempixel.people.2.jpeg" alt="Lorem Pixel image">
-				<p>Social design</p>
-			</a>
-		</div>
-		<div id="project7">
-			<a href="project.html">
-				<img src="images/lorempixel.technics.2.jpeg" alt="Lorem Pixel image">
-				<p>Gestural interaction</p>
-			</a>
-		</div>
-		<div id="project8">
-			<a href="project.html">
-				<img src="images/lorempixel.city.2.jpeg" alt="Lorem Pixel image">
-				<p>Design tools</p>
-			</a>
-		</div>
-	</div>
+        <!-- About Section -->
+    <section id="project1" class="container content-section text-center">
+                <h1>Project I</h1>
+		<h3>AUVSI</h3>
+
+		<p>The UC San Diego Autonomous Airplane Team designs, builds, tests and flies our own autonomous flying vehicle. We design our system from the ground up, do our own engineering, and fabricate the final product ourselves. We find our own sponsors, manage our own resources, and conduct our own public relations. Our test pilots are students or professional volunteers. Student designed. Student built. Student competition.</p>
+		
+    </section>
+    
+
+    <section id="project2" class="container content-section text-center">
+        <h1>Project II</h1>
+
+		
+		<h3>Grand Prieee</h3>
+		<p>Grand PrIEEE is an undergraduate design competition hosted by UC San Diego, based on UC Davis's Natcar competition. Teams of undergraduate students design, build, and race an autonomous car which must follow a track marked by 1-inch white tape on dark-colored carpet. Under the tape, there is a wire carrying a 100mA rms 75kHz sinusoidal signal. The fastest cars travel at speeds up to 10ft/s.</p>
+		
+		
+    </section>
+
+    <section id="contact" class="content-section text-center">
+        <div class="contact-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Contact Me</h2>
+                    <p>Email: xiz016@ucsd.edu</p>
+                    <p>Phone: 858-717-2653</p>
+          
+                </div>
+            </div>
+        </div>
+    </section>
+	
 </body>
 </html>
